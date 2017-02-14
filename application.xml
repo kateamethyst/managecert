@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application>
+    <langs support="en" default="en"></langs>
+    <api use="off">
+        <ifs>
+        </ifs>
+    </api>
+    <admin use="on" index="adminApplicationindex">
+        <ifs>
+            <if class="adminApplicationindex" permission="off" desc="Sample Admin Interface"></if>
+        </ifs>
+        <menus>
+        </menus>
+    </admin>
+    <front use="on">
+        <ifs>
+            <if class="frontSample" permission="off" code-assist="off" desc="Sample Front Interface">
+            </if>
+        </ifs>
+    </front>
+</application>

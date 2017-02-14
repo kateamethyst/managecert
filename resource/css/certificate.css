@@ -1,0 +1,40 @@
+ #wrap-certificate {
+    background: url([img]/certificate.jpg) no-repeat center center / 100%;
+}
+
+div.section {
+    padding-top: 64px;
+    /* padding-left: 76px; */
+    text-align: center;
+}
+@media print {
+    #wrap-certificate {
+        background: transparent;
+    }
+
+    div.section {
+        padding-top: 64px;
+        /* padding-left: 76px; */
+        text-align: center;
+    }
+
+    img#certificate-img {
+        position: absolute;
+        top: 0;
+        width: 585px;
+        height: 820px;
+        display: block;
+        z-index: -1;
+    }
+    @page 
+    {
+        size:  auto;
+        margin: 0mm;
+    }
+
+    body
+    {
+        border: solid 1px blue ;
+        margin: 10mm 15mm 10mm 15mm;
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="class/tests/bootstrap.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         strict="true"
+         timeoutForSmallTests="1"
+         timeoutForMediumTests="5"
+         timeoutForLargeTests="10"
+         verbose="true">
+
+    <testsuites>
+        <testsuite name="suite">
+            <file>class/tests/mytest.php</file>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <log type="coverage-html" target="build/coverage" title="notipop"
+             charset="UTF-8" yui="true" highlight="true"
+             lowUpperBound="35" highLowerBound="70"/>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
+        <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
+    </logging>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">class/app</directory>
+            <directory suffix=".php">class/lib</directory>
+            <exclude>
+                <directory suffix=".php">class/tests</directory>
+                <file>class/lib/libConfig.php</file>
+                <file>class/lib/libCurl.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <php>
+        <ini name="zend.enable_gc" value="Off" />
+    </php>
+
+</phpunit>

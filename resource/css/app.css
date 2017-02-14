@@ -1,0 +1,104 @@
+body{
+    width: auto;
+    min-width: 1028px;
+    margin: 0 6px 10px;
+    padding: 0 0 50px;
+}
+
+.mBoard table .selected,
+.mBoard table .hover {
+    background-color: white;
+}
+
+div.index.section{
+    margin: 0 0 0;
+}
+
+.fText{
+    width:280px;
+}
+
+#certificate-img {
+    position: absolute;
+    width: 585px;
+    height: 820px;
+    display: none;
+}
+
+#popup {
+    color: #666666;
+}
+.certificate-header {
+    display: inline-block;
+    border-width: 0px;
+    width: 425px;
+    height: 170px;
+    background: white;
+    border: 1px solid #c1c1c1;
+    padding: 25px 20px;
+}
+
+.certificate-message {
+    display: inline-block;
+    border-width: 0px;
+    width: 425px;
+    height: 170px;
+    background: white;
+    border: 1px solid #c1c1c1;
+    padding: 25px 20px;
+    margin-top: 80px;
+}
+
+#issue-number {
+    text-align: right;
+}
+
+#certificate_name {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px
+}
+
+#name, #birthday {
+        text-align: right;
+}
+
+#certificate-img {
+        position: relative;
+}
+
+#message{
+    font-family: '돋움';
+    font-style: normal;
+    font-size: 15px;
+    height: 150px;
+}
+
+#date{
+    text-align:center;
+}
+
+.certificate-footer {
+    display: inline-block;
+    border-width: 0px;
+    width: 425px;
+    background: white;
+    border: 1px solid #c1c1c1;
+    padding: 15px 20px;
+    margin-top: 90px;
+}
+
+.certificate-footer > h2 {
+    text-align: center;
+}
+
+#wrap-certificate {
+    /*min-width: 620px;
+    min-height: 823px;*/
+    width: 585px;
+    height: 820px;
+}
+
+input.fText.gDate.readonly {
+    background-color: rgb(235, 235, 228);
+}
